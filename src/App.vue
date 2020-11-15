@@ -1,32 +1,37 @@
 <template>
   <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
+    <div
+      id="nav "
+      class="navbar navbar-dark bg-primary d-flex justify-content-around"
+    >
+      <router-link class="text-light" to="/">New Blog Post</router-link>
+      <router-link class="text-light" to="/blog">Blog</router-link>
     </div>
-    <router-view />
+    <transition
+      name="router-anim"
+      enter-active-class="animate__animated animate__fadeInDown"
+      leave-active-class="animate__animated animate__fadeOutDown"
+    >
+      <router-view />
+    </transition>
   </div>
 </template>
 
+<script>
+export default {};
+</script>
+
 <style lang="scss">
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
+// @import "https://cdn.jsdelivr.net/npm/animate.css@3.5.1";
+@import "https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css";
+@import "../node_modules/animate.css/animate.css";
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+* {
+  font-family: "Poppins", sans-serif;
 }
 
-#nav {
-  padding: 30px;
-
-  a {
-    font-weight: bold;
-    color: #2c3e50;
-
-    &.router-link-exact-active {
-      color: #42b983;
-    }
-  }
+.paper {
+  position: fixed;
+  width: 100%;
 }
 </style>
