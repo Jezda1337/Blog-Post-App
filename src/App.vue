@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <div
-      id="nav "
+      id="nav"
       class="navbar navbar-dark bg-primary d-flex justify-content-around"
     >
       <router-link class="text-light" to="/">New Blog Post</router-link>
@@ -23,11 +23,14 @@ export default {};
 
 <style lang="scss">
 // @import "https://cdn.jsdelivr.net/npm/animate.css@3.5.1";
-@import "https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css";
-@import "../node_modules/animate.css/animate.css";
+// @import "https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css";
+// @import "../node_modules/animate.css/animate.css";
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
 * {
   font-family: "Poppins", sans-serif;
+}
+#nav a {
+  font-size: 1.5rem;
 }
 
 .paper {
