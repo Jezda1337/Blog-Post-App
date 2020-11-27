@@ -1,6 +1,6 @@
 # blog-app
 # tools: 
-##Vue,Vue-Router,Vuex,Vuex-persist,UUID,SASS,Bootstrap,Animate CSS
+## Vue,Vue-Router,Vuex,Vuex-persist,UUID,SASS,Bootstrap,Animate CSS
 
 ## Project setup
 ```
