@@ -22,9 +22,7 @@ export default {};
 </script>
 
 <style lang="scss">
-// @import "https://cdn.jsdelivr.net/npm/animate.css@3.5.1";
-// @import "https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css";
-// @import "../node_modules/animate.css/animate.css";
+@import "../node_modules/animate.css/animate.css";
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
 * {
   font-family: "Poppins", sans-serif;

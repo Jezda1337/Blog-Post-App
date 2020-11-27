@@ -2,7 +2,7 @@
   <div class="blog container-fluid text-center mb-0 paper">
     <Header header="All Blog Posts" />
     <ul class="list-unstyled mb-0 p-3">
-      <li class="item p-2 mb-3" v-for="item in newPosts" :key="item.id">
+      <li class="item p-2 mb-3" v-for="item in newBlogPosts" :key="item.id">
         <h2 class="display-4 text-dark cursor" @click="item.show = !item.show">
           {{ item.title }}
         </h2>
@@ -30,13 +30,10 @@ export default {
   components: {
     Header,
   },
-  data() {
-    return {
-      newPosts: [],
-    };
-  },
-  created() {
-    this.newPosts = JSON.parse(localStorage.getItem("allBlogPosts") || []);
+  computed: {
+    newBlogPosts() {
+      return this.$store.getters.getBlogs;
+    },
   },
 };
 </script>
